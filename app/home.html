@@ -1,0 +1,22 @@
+
+ 
+  
+  
+  <div class="container">
+              <button (click)="toLowerCase()" class="btn btn-default" style="margin-left:4%">LowerCase</button>
+            <button (click)="toUpperCase()" class="btn btn-default">UpperCase</button>
+    <form  class="form-inline">
+      <h2 style="color:red">{{studentName}}</h2>
+        <label>WRITE</label>
+        <input type="text" class="form-control" placeholder="Write Something" [(ngModel)]="studentName">
+      <button (click)="myFunction()" class="btn btn-info">Submit</button>
+
+    </form>
+</div>
+<div>
+  <ol>
+    <li style="padding:1%" *ngFor="#name of array"><span class="well well-sm">Hey {{ name }}</span>  </li>
+  </ol>
+
+
+</div>
