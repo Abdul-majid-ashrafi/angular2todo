@@ -15,7 +15,7 @@
 </div>
 <div>
   <ol>
-    <li style="padding:1%" *ngFor="#name of array"><span class="well well-sm">Hey {{ name }}</span>  </li>
+    <li style="padding:1%" *ngFor="#name of array"><span class="well well-sm"  [style.color]="ch" (mouseover)="ch = 'red'" (mouseout)="ch = 'blue'">{{ name }}</span>  </li>
   </ol>
 
 
