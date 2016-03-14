@@ -6,8 +6,8 @@
               <button (click)="toLowerCase()" class="btn btn-default" style="margin-left:4%">LowerCase</button>
             <button (click)="toUpperCase()" class="btn btn-default">UpperCase</button>
     <form  class="form-inline">
-      <h2 style="color:red">{{studentName}}</h2>
-        <label>WRITE</label>
+        <h3 [hidden]="studentName">Type Something!</h3>
+      <h2 style="color:red" [hidden]="!studentName">Typing: {{studentName}}</h2>
         <input type="text" class="form-control" placeholder="Write Something" [(ngModel)]="studentName">
       <button (click)="myFunction()" class="btn btn-info">Submit</button>
 
@@ -15,8 +15,8 @@
 </div>
 <div>
   <ol>
-    <li style="padding:1%" *ngFor="#name of array"><span class="well well-sm"  [style.color]="ch" (mouseover)="ch = 'red'" (mouseout)="ch = 'blue'">{{ name }}</span>  </li>
+    <li style="padding:1%" *ngFor="#name of array #i=index"><span class="well well-sm"  [style.color]="ch" (mouseover)="ch = 'red'" (mouseout)="ch = 'black'" (click)="removeItem(i)">
+        {{ name }} </span>  </li>
   </ol>
-
 
 </div>

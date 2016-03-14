@@ -2,15 +2,15 @@
 1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
 1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
 1 verbose cli   'run',
-1 verbose cli   'lite' ]
+1 verbose cli   'tsc:w' ]
 2 info using npm@2.14.7
 3 info using node@v4.2.3
-4 verbose run-script [ 'prelite', 'lite', 'postlite' ]
-5 info prelite angular2-starter@1.0.0
-6 info lite angular2-starter@1.0.0
+4 verbose run-script [ 'pretsc:w', 'tsc:w', 'posttsc:w' ]
+5 info pretsc:w angular2-starter@1.0.0
+6 info tsc:w angular2-starter@1.0.0
 7 verbose unsafe-perm in lifecycle true
-8 info angular2-starter@1.0.0 Failed to exec lite script
-9 verbose stack Error: angular2-starter@1.0.0 lite: `lite-server`
+8 info angular2-starter@1.0.0 Failed to exec tsc:w script
+9 verbose stack Error: angular2-starter@1.0.0 tsc:w: `tsc -w`
 9 verbose stack Exit status 3221225786
 9 verbose stack     at EventEmitter.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\lifecycle.js:214:16)
 9 verbose stack     at emitTwo (events.js:87:13)
@@ -23,17 +23,17 @@
 10 verbose pkgid angular2-starter@1.0.0
 11 verbose cwd C:\Users\Taimoor tariq\Desktop\myangular2HelloWorld
 12 error Windows_NT 6.3.9600
-13 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "run" "lite"
+13 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "run" "tsc:w"
 14 error node v4.2.3
 15 error npm  v2.14.7
 16 error code ELIFECYCLE
-17 error angular2-starter@1.0.0 lite: `lite-server`
+17 error angular2-starter@1.0.0 tsc:w: `tsc -w`
 17 error Exit status 3221225786
-18 error Failed at the angular2-starter@1.0.0 lite script 'lite-server'.
+18 error Failed at the angular2-starter@1.0.0 tsc:w script 'tsc -w'.
 18 error This is most likely a problem with the angular2-starter package,
 18 error not with npm itself.
 18 error Tell the author that this fails on your system:
-18 error     lite-server
+18 error     tsc -w
 18 error You can get their info via:
 18 error     npm owner ls angular2-starter
 18 error There is likely additional logging output above.

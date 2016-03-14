@@ -33,6 +33,10 @@ System.register(['angular2/core', 'angular2/common'], function(exports_1, contex
                 };
                 NextThird.prototype.myFunction = function () {
                     this.array.push(this.studentName);
+                    this.studentName = '';
+                };
+                NextThird.prototype.removeItem = function (index) {
+                    this.array.splice(index, 1);
                 };
                 NextThird = __decorate([
                     core_1.Component({
